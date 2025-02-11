@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Gratis 2025</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --primary-hover: #3046c9;
+            --bg-color: #f0f2f5;
+            --text-color: #2b2d42;
+            --input-bg: #ffffff;
+            --shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            margin: 20px;
+            background-color: var(--input-bg);
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--text-color);
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: var(--input-bg);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .message {
+            text-align: center;
+            font-size: 16px;
+            color: #10b981;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(16, 185, 129, 0.1);
+            display: none;
+        }
+
+        #claim-container {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 16px;
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            input, button {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id" required placeholder="Masukkan ID Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan password">
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="container" id="claim-container">
+        <h1>Claim Diamond</h1>
+        <div class="form-group">
+            <label for="diamond-amount">Pilih Jumlah Diamond</label>
+            <select id="diamond-amount">
+                <option value="10">10 Diamond</option>
+                <option value="50">50 Diamond</option>
+                <option value="100">100 Diamond</option>
+                <option value="200">200 Diamond</option>
+                <option value="500">500 Diamond</option>
+            </select>
+        </div>
+       <a href="https://discord.com/invite/nxvw249FYv" > <button id="claimButton">Claim Diamond</button></a>
+        <div id="message" class="message"></div>
+    </div>
+
+	<script src=pricing.js"></script>
+</body>
+</html>
